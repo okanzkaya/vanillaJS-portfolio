@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Responsive Demo
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- <script src='main.js'></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow”
+        integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <script src=”https://code.jquery.com/jquery-3.2.1.slim.min.js”
+        integrity=”sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN”
+        crossorigin=”anonymous”></script>
+    <script src="script.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+        integrity=”sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q”
+        crossorigin=”anonymous”></script>
+
+    <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js”
+        integrity=”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl”
+        crossorigin=”anonymous”></script>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">My Projects</a>
+        <a href="#">My Specifications</a>
+    </div>
+
+    <div class="navbar-flexbox">
+        <div class="navbar-texts">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">My Projects</a>
+            <a href="#">My Specifications</a>
+        </div>
+        <h1 id="demo-portfolio"
+            style="position:fixed; font-size: 5vw; top: 0.1vw; left: 33.3%; color: rgb(15, 46, 46);">Demo Portfolio</h1>
+        <a href="javascript:void(0)" onclick="openNav()"><img id="hamburger-menu" src="assets/menu.png"></a>
+    </div>
+
+    <div class="about-block">
+        <div class="about-block-item">
+            <img src="assets/avatar.jpg" id="avatar">
+        </div>
+        <div class="about-block-item">
+            <h1>John Doe 29M</h1>
+            <h4>Hi, my name is John.<br> I am a Front-End Web Developer from Lorem Republic. <br>
+                I have been developing various kind of websites <br> with my continuous passion for 6 years.
+                <br> <br>
+                I am employed as a Front-End Developer<br> at <b>Lorem Inc.</b> since August 2021.
+            </h4>
+        </div>
+        <div class="qualifications">
+            <h1 id="qualifications">
+                My Qualifications
+            </h1>
+            <h4>
+                - I have an advanced knowledge of<br> basics of HTML, CSS and JavaScript.
+                <br> <br>
+                - I actively use the ReactJS and AngularJS libraries<br> with expertise.
+            </h4>
+            <h4>
+                - I use Sass postprocessor and Bootstrap library <br> in my web design projects.
+            </h4>
+            <h4>
+                -I am a hardworking and meticulous<br> regardless what I do. <br>
+                I do my job in the best possible way with my <br>best approach.
+            </h4>
+        </div>
+    </div>
+
+    <h1 id="examples">Some Examples of<br> My Projects</h1>
+    <div class="body-grid">
+
+        <div class="body-grid-item">
+
+            <h3>&nbsp;&nbsp;1. The Great Ipsum Project</h3>
+            <div class="projects">
+                <img src="assets/project-1.jpeg">
+            </div>
+        </div>
+        <div class="body-grid-item">
+            <h3>&nbsp;&nbsp;2. The Sit Amet Project</h3>
+            <div class="projects">
+                <img src="assets/project-2.jpeg">
+            </div>
+        </div>
+        <div class="body-grid-item">
+            <h3>&nbsp;&nbsp;3. The Lorem Project</h3>
+            <div class="projects">
+                <img src="assets/project-3.jpeg">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-grid">
+        <div class="footer-grid-item">
+            <div class="item-text">Social</div>
+            <div class="item-body">
+                <a href="#"><img src="assets/github.png"></a>
+                <a href="#"><img src="assets/medium.png"></a>
+                <a href="#"><img src="assets/linkedin.png"></a>
+            </div>
+        </div>
+        <div class="footer-grid-item">
+            <div class="item-text"><a href="#">Contact</a></div>
+        </div>
+        <div class="footer-grid-item">
+            <div class="item-text"><a href="#">Blog</a></div>
+        </div>
+        <div class="footer-grid-item">
+            <h5 id="copyright-text">© All Rights Reserved.</h5>
+        </div>
+    </div>
+
+    <div class="Content__Container">
+        <main class="Content"></main>
+
+        <footer class="Grid__Container">
+
+            <div class="row-column">
+                <div class="Column__Header">Social</div>
+                <div class="Column__Header">My Profiles</div>
+                <div class="link-icons">
+                    <a href="#"><img src="assets/github.png"></a>
+                    <a href="#"><img src="assets/medium.png"></a>
+                    <a href="#"><img src="assets/linkedin.png"></a>
+                </div>
+            </div>
+
+            <div class="Column">
+                <div class="Column__Header">Contact</div>
+                <a href="#mail" class="Column__Link">johndoe@mail.com</a>
+            </div>
+
+            <div class="Column">
+                <div class="Column__Header">Blog</div>
+                <a href="#blog" class="Column__Link">My Blog</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

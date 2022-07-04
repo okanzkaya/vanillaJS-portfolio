@@ -1,0 +1,425 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 3.9vw;
+	background-color: rgb(255, 255, 255);
+	font-family: 'Open Sans', sans-serif;
+}
+
+b {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 1500;
+}
+
+.navbar-flexbox {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	background-color: white;
+	padding-top: 2.5vw;
+	padding-bottom: 2.5vw;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	border-bottom: 0.5vw solid rgb(233, 183, 183);
+	top: 0px;
+}
+
+.navbar-flexbox .navbar-texts a {
+	padding: 1.6vw;
+}
+
+.navbar-flebox a {
+	text-decoration: none;
+}
+
+#hamburger-menu {
+	width: 10vw;
+	padding-left: 0%;
+}
+
+.side-navbar {
+	position: fixed;
+}
+
+#qualifications {
+	font-size: 3vw;
+}
+
+
+/* source : https://www.w3schools.com/howto/howto_js_sidenav.asp */
+/* The side navigation menu */
+.sidenav {
+	height: 100%;
+	/* 100% Full-height */
+	width: 0;
+	/* 0 width - change this with JavaScript */
+	position: fixed;
+	/* Stay in place */
+	z-index: 15;
+	/* Stay on top */
+	top: 0;
+	/* Stay at the top */
+	right: 0;
+	background-color: rgb(235, 214, 214);
+	/* Black*/
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 60px;
+	/* Place content 60px from the top */
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+#body-annotation h2 {
+	text-align: center;
+	color: black;
+}
+
+.body-grid-item .projects {
+	display: flex;
+	justify-content: center;
+}
+
+.body-grid-item h3 {
+	padding-left: 2.3vw;
+}
+
+.body-grid-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.body-grid-item img {
+	width: 80%;
+}
+
+.about-block {
+	margin-bottom: 2vw;
+	border-bottom: 0.15vw solid black;
+}
+
+.qualifications {
+	text-align: center;
+}
+
+#examples {
+	text-align: center;
+	font-size: 7vw;
+}
+
+#qualifications {
+	font-size: 7vw;
+}
+
+.about-block-item {
+	padding-top: 0vw;
+	display: block;
+	justify-content: center;
+	text-align: center;
+	object-fit: contain;
+}
+
+.about-block-item * {
+	width: 100%;
+}
+
+.about-block-item h1 {
+	font-size: 7vw;
+}
+
+.about-block-item img {
+	margin-top: 19vw;
+	width: 55%;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-grid {
+	margin-top: 50px;
+	display: grid;
+	background-color: #36393e;
+}
+
+.footer-grid-item {
+	display: flex;
+	border-top: 0.1vw solid rgb(107, 80, 80);
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-grid-item .item-text {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 7vw;
+	color: rgb(231, 207, 207);
+
+}
+
+.item-text a {
+	text-decoration: none;
+	color: rgb(231, 207, 207);
+}
+
+.item-body {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.footer-grid-item .item-body img {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: auto;
+	display: block;
+	width: 33.3%;
+}
+
+#copyright-text {
+	color: rgb(231, 207, 207);
+}
+
+/* Placeholder for content that would normally push footer to the bottom */
+.Content__Container {
+	display: flex;
+	min-height: 30vh;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgb(255, 255, 255);
+}
+
+
+/* Start Footer container */
+.Grid__Container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: #36393e;
+	color: white;
+	padding: 1rem;
+}
+
+
+/* Single column container */
+.Column {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	padding: 1rem;
+}
+
+/* Colum specific styles */
+.Column__Header {
+	opacity: 0.8;
+	text-transform: uppercase;
+}
+
+.link-icons img {
+	width: 10%;
+	padding-left: 10px;
+}
+
+.Column a img {
+	width: 10%;
+}
+
+.Column__Link {
+	text-decoration: none;
+	color: white;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.Column__Link:hover {
+	opacity: 0.8;
+}
+
+
+/* Bottom column of the footer  */
+.Bottom_Column {
+	grid-column: span 2 / span 2;
+	padding: 1rem;
+	opacity: 0.8;
+}
+
+.Bottom_Column__Content_Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* Social icons */
+.Social__Icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: white;
+}
+
+.Column__Social_Link {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.Column__Social_Link:hover {
+	opacity: 0.8;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 540px) {
+	.navbar-texts {
+		display: none;
+	}
+
+	.navbar-flexbox {
+		justify-content: right;
+	}
+
+	#hamburger-menu {
+		padding-right: 16px;
+	}
+
+	.Content__Container {
+		display: none;
+	}
+
+}
+
+/* For Tablets */
+@media only screen and (min-width: 540px) and (max-width: 820px) {
+	.navbar-texts {
+		display: none;
+	}
+
+	.navbar-flexbox {
+		justify-content: right;
+	}
+
+	#hamburger-menu {
+		padding-right: 16px;
+	}
+
+	.Content__Container {
+		display: none;
+	}
+}
+
+/* For Desktops and Laptops */
+@media only screen and (min-width: 820px) {
+	#hamburger-menu {
+		display: none;
+	}
+
+	body * {
+		font-size: 1.3vw
+	}
+
+	#demo-portfolio {
+		display: none;
+	}
+
+	.about-block-item img {
+		width: 15%;
+		border-radius: 50%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.body-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
+	.navbar-flexbox {
+		position: fixed;
+		width: 100%;
+		display: flex;
+		background-color: white;
+		padding-top: 1.5%;
+		padding-bottom: 1.5%;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		border-bottom: 0.2vw solid rgb(233, 183, 183);
+		top: 0px;
+	}
+
+	.navbar-texts a {
+		text-decoration: none;
+	}
+
+	.navbar-texts a:hover {
+		background-color: rgb(219, 219, 205);
+		transition: 0.8s;
+		overflow: hidden;
+	}
+
+	.about-block {
+		max-height: auto;
+	}
+
+	#qualifications {
+		font-size: 2vw;
+	}
+
+	.about-block-item h1 {
+		font-size: 3vw;
+	}
+
+	.about-block-item img {
+		margin-top: 100px;
+	}
+
+	#examples {
+		text-align: center;
+		font-size: 2vw;
+	}
+
+	.footer-grid {
+		display: none;
+	}
+
+}
