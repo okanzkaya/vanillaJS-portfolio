@@ -1,5 +1,12 @@
 # responsive-simple-portfolio-plainJS
 
+I have created a simple responsive portfolio website, design is not excellent because the main purpose was making website responsive.
+
+I did not use any external libraries, I have only used plain CSS3, HTML5 and JavaScript.
+
+Feel free to edit, fork, share.
+
+
 
 Desktop View:
 
